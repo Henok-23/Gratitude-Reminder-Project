@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+    <link rel="stylesheet", href="style.css"/>
+</head>
+<body class="backGround">
+
+    <h1 id="topic"> Gratitude Reminder</h1>
+
+    <div class="noticee">
+
+    <ul >
+
+    <li class="fontNotice"> please register using your email below</li>
+    <li class="fontNotice"> Then, we will email you with confirmation email within 2 minutes</li>
+    <li class="fontNotice">Finally, you can procced to login</li>
+</ul>
+</div>
+
+
+    <!--to make the form, i created big div, then created smaller div for each compartement, flipped the div to make each compartment a row-->
+    <div class="main3">
+    
+      <!--flex first-->
+      <div> 
+      <h2 class="colorFont">Gratitude</h2>
+      <h3 class="colorFont">Register your login credentials</h3>
+      <form action="/register" method="POST">
+          
+              <label for="name" class="colorFont">
+                    First Name:
+              </label>
+              <input type="name"
+                     id="name" 
+                     name="name"
+                     placeholder="Enter your name" required>
+            <!--Third div-->
+            </div>
+  
+            <div> 
+            <label  for="email" class="colorFont">
+                  Email Addr:
+            </label>
+            <input type="email" 
+                   id="email" 
+                   name="email" 
+                   placeholder="Enter your Email Address" required>
+                  </div>
+              <!--here our first div ends and the second one starts-->
+              <!--second part of it-->
+          <div > 
+            <label for="password" class="colorFont">
+                  Password:
+            </label>
+            <input type="password"
+                   id="password" 
+                   name="password"
+                   placeholder="Enter your Password" required>
+          <!--Third div-->
+          </div>
+          <div> 
+          <p class="colorFont importantt"> Please insert  5 character password only</p>
+          <p class="colorFont importantt">For instance, "Aqstv" correct password</p>
+      </div>
+  
+  
+            <div class="wrap">
+                  <button  type="submit"
+                          onclick="solve()" class="colorFont buttonn">
+                        Submit
+                  </button>
+             
+            </div>
+    
+   
+
+</div>
+   
+
+
+
+    
+    
+</body>
+</html>

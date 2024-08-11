@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet", href="style.css"/>
+</head>
+<body class="backGround">
+    <h1 id="topic" class="colorFont"> Gratitude</h1>
+
+
+   <!-- This is a code from geeks for geeks-->
+
+   <!--to make the form, i created big div, then created smaller div for each compartement, flipped the div to make each compartment a row-->
+   <div class="main2">
+    <!--flex first-->
+    <div> 
+    <h2 class="colorFont">Gratitude Reminder</h2>
+    <h3 class="colorFont">Enter your login credentials</h3>
+    <!--This /login, POST method basically means we are requesting a service for the server-->
+    <form action="/login" method="POST">
+          <label  for="email" class="colorFont">
+                Email Add:
+          </label>
+          <input type="email" 
+                 id="email" 
+                 name="email" 
+                 placeholder="Enter your Email Address" required>
+                </div>
+            <!--here our first div ends and the second one starts-->
+            <!--second part of it-->
+        <div> 
+          <label for="password" class="colorFont">
+                Password:
+          </label>
+          <input type="password"
+                 id="password" 
+                 name="password"
+                 placeholder="Enter your Password" required>
+        <!--Third div-->
+        </div>
+
+          <div class="wrap">
+                <button type="submit" 
+                        onclick="solve()" class="colorFont buttonn">
+                      Submit
+                </button>
+           
+          </div>
+    
+    <!--fourth div -->
+    <div> 
+    </form>
+    <p class="colorFont">Not registered?
+          <a href="./register"
+             style="text-decoration: none;">
+                Create an account
+          </a>
+    </p>
+</div>
+
+</div>
+
+    
+</body>
+</html>

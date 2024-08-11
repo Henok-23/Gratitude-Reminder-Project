@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main</title>
+    <link rel="stylesheet", href="style.css"/>
+</heads>
+<body class="backGround">
+
+    <h1 id="topic"> Gratitude Reminder</h1>
+    <h3 id="topic"> Welcome to the our website, we hope to remind you what you already have and be happier</h3>
+    <div class="mainPage"> 
+    <div class="leftSide top insertData"> 
+    
+
+
+    <form action="/insertData" method="POST">
+        
+        <label for="insertD" class="textColor fontt"> Please insert a word or sentence you are gratefule for below. </label>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <input type="text" id="insertD" name="insertD" textholder="Please insert you data below">
+        <button type="submit"
+        onclick="solve()" class="buttonn"> Insert Data</button>
+    </form>
+    <br/>
+    <br/>
+
+    <p class="textColor smll fontt"> Each sentence or word will be inserted to the scroll bar to right. Scroll to the bottom</p>
+    <p class="textColor smll fontt"> Then, we will randomly remind you everyweek via email.</p>
+  
+    
+    
+    
+
+        </div>
+    <div class="rightSide scrol insertData">
+
+        <ul id="userListG" class="textColor" > </ul>
+
+<script>
+    // Log the data before processing
+    console.log("before,", "<%= userdataImport %>");
+
+    // Convert the EJS variable to a JavaScript string and split it
+    const udi2 = "<%= userdataImport %>".split(",");
+    
+    // Find the list element
+    let lists = document.getElementById("userListG");
+
+    // Log the processed data
+    console.log("After,", udi2);
+
+    // Loop through the items and append them to the list
+    for (let i = 0; i < udi2.length; ++i) {
+        let li = document.createElement('li');
+        li.innerText = udi2[i];
+        lists.appendChild(li);
+    }
+</script>
+  
+
+    </div>
+
+    
+        </div>
+            <div class="last">  
+                <h4 class="textColor fontt ">Scroll Bar: please scroll to the bottom to see your lastest information</h4> </div>
+
+        <div class="l">  <a href="/logout"> <button class="buttonn"> Log out</button></div></a>
+
+ 
+
+    
+</body>
+</html>

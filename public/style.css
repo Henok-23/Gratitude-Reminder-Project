@@ -1,0 +1,281 @@
+
+/*This basically chagnes the background color for every page to green */
+.backGround{
+    background-color: #D3FFAB;
+    
+}
+.textColor{
+    color:#6e354d;
+
+}
+
+
+
+/* All this is just for the login page that we got*/
+#topic{
+    text-align: center;
+    font-family: "Gupter", serif;
+  font-weight: bold;
+  font-style: normal;
+  color:#6e354d;
+  padding-left: 15px;
+}
+#lis{
+    text-align:center;
+    list-style-position: inside;
+
+}
+
+/*  This is used for  desktop use*/
+@media  screen 
+and (min-device-width : 1024px) {
+    .homeMain{
+        height:100%;
+        width:100%;
+        align-items: center;
+    }
+    /*we are creating space for the unordered list we got*/
+    .liM{
+        margin:20px;
+        font-family: "Gupter", serif;
+        font-weight: 400;
+        font-style: normal;
+        color: #6e354d;
+        font-weight: 500;
+        font-size: 18px;
+    }
+    .img1{
+        display: block;
+        width: 50%;
+        height: 70%;
+        align-items: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 2%;
+        margin-bottom: 2%;
+          
+          
+    }
+    .scrol{
+        margin: 4px, 4px;
+        padding: 4px;
+        background-color: #ccd5ae;
+        width: 30%;
+        height: 70%;
+        overflow-x: hidden;
+        overflow-y: auto;
+        display: flex;
+        text-align: justify;
+        align-items: center;
+        justify-content: center; 
+    }
+
+}
+
+/*this is for tablet*/
+@media  screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+    .homeMain{
+    height: 100%;
+    width:500px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.liM{
+    
+    font-family: "Gupter", serif;
+    font-style: normal;
+    color: #6e354d;
+    font-weight: 500;
+    font-size: 18px;
+}
+.img1{
+    display: block;
+    width: 60%;
+    height: 80%;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+      
+      
+}
+
+}
+
+/* This is for smart phone*/
+@media screen and (max-device-width:767px) {
+    .homeMain{
+        height:75%;
+        width: 300px;
+        align-items: center;
+        margin-left: 10px;
+    }
+    .liM{
+        font-family: "Gupter", serif;
+        font-weight: 500;
+        font-style: normal;
+        color: #6e354d;
+        
+    }
+    .img1{
+        display: block;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 2%;
+        margin-bottom: 2%;
+          
+          
+    }
+
+    /* we are turning it to veritcal flex alignment that we got  */
+
+    .mainPage{
+        display: flex;
+        height: 80vh;
+        gap:70px;
+        flex-direction: column;
+        justify-content: center; /* Centers items horizontally */
+        align-items: center; /* Centers items vertically */
+    }
+
+    .scrol{
+        margin: 4px, 4px;
+        padding: 4px;
+        background-color: #ccd5ae;
+        width: 80%;
+        height: 150%;
+        overflow-x: hidden;
+        overflow-y: auto;
+        display: flex;
+        text-align: justify;
+        align-items: center;
+        justify-content: center; 
+    }
+    
+
+}
+.buttonT{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+    margin-right: 10px !important;
+
+}
+.buttonn{
+    background-color:#FFA885;
+    color:blue;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+
+/*This is for the login page alone*/
+.main2{
+    
+    display: flex;
+    
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    height: 60vh;
+}
+/* This is for the registeration we don't want it to be at the center for lots of things actually*/
+.main3{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+/* login font*/
+.colorFont{
+    color: #6e354d;
+
+}
+.important{
+    color:red;
+    font-weight: bold;
+    align-items: center;
+}
+
+.noticee{
+    align-items: center;
+    padding-right: 45px;
+}
+
+.fontNotice{
+  text-align: center;
+  font-family: "Gupter", serif;
+  font-weight: 500;
+  font-style: normal;
+  color:#6e354d;
+  list-style-position: inside;
+
+}
+
+/*This is for the confirmation page*/
+.confirmm{
+text-align: center;
+font-family: "Gupter", serif;
+font-weight: bold;
+font-style: normal;
+color:#6e354d;
+}
+.cForm{
+    display: flex;
+    flex-direction: column;
+    height:100%;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+/* This will basically be the main page CSS we will work on */
+
+.smll{
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* This is for the main page bigger div turning it into flex box  */
+.mainPage{
+    display: flex;
+    height: 60vh;
+    gap:70px;
+    justify-content: center; /* Centers items horizontally */
+    align-items: center; /* Centers items vertically */
+}
+
+
+.fontt{
+
+font-weight: bold;
+font-style: normal;
+color:#6e354d;
+}
+
+.last{
+    display: flex;
+    height: 10vh;
+    justify-content: flex-end;
+}
+.l{
+    display: flex;
+    height: 5vh;
+    justify-content: flex-end;
+}
+
+
+
+
